@@ -3,7 +3,8 @@ FROM qmrlab/octaveci:v4.2.2
 
 RUN git clone https://github.com/MOxUnit/MOxUnit.git /home/MOxUnit; \
     git clone https://github.com/MOdox/MOdox.git /home/MOdox; \
-    git clone https://github.com/MOcov/MOcov.git /home/MOcov 
+    git clone https://github.com/MOcov/MOcov.git /home/MOcov; \
+    apt-get update && apt-get install -y iputils-ping
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
