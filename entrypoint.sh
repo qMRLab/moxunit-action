@@ -131,6 +131,8 @@ echo "RUNNING UNIT TESTS"
 echo "SETUP: $SETUP"
 echo "COMMAND: $COMMAND"
 
+SETUP="$SETUP startup;"
+
 octave --no-gui --eval "$SETUP $COMMAND"
 RESULT=$?
 
