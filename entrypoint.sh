@@ -99,7 +99,7 @@ if   [ "$WITH_COVERAGE" = "true" ] \
   || ! [ -z $COVER_HTML_DIR ] \
   || ! [ -z $COVER_JUNIT_XML_FILE ] \
   || ! [ -z $COVER_JSON_FILE ] ; then
-  RUNTESTS_ARGS="$RUNTESTS_ARGS, '-with_coverage', '-cover', $SRC_DIRS"
+  RUNTESTS_ARGS="$RUNTESTS_ARGS, '-with_coverage', '-cover', $SRC_DIRS, '-cover_exclude','*GUI*'"
 
   # write to xml file
   if  ! [ -z $COVER_XML_FILE ] ; then
