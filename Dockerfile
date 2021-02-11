@@ -1,5 +1,5 @@
 # It comes with packages installed Octave 4.2.2
-FROM agahkarakuzu/qmrfocal:vtest
+FROM agahkarakuzu/qmrfocal:vtry
 
 RUN git clone https://github.com/MOxUnit/MOxUnit.git /home/MOxUnit; \
     git clone https://github.com/MOdox/MOdox.git /home/MOdox; \
