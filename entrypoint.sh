@@ -131,7 +131,7 @@ echo "RUNNING UNIT TESTS"
 echo "SETUP: $SETUP"
 echo "COMMAND: $COMMAND"
 
-SETUP="$SETUP startup;"
+SETUP="$SETUP startup; setenv('ISCITEST','1');"
 
 octave --no-gui --eval "$SETUP $COMMAND"
 RESULT=$?
